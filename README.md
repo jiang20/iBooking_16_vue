@@ -1,2 +1,12 @@
-# iBooking_16_vue
-iBooking_16的前端代码
+# Install
+
+    > npm install
+
+
+
+# Run
+    > npm run dev
+
+Navigation to http://localhost:8080 to view the site
+    
+
