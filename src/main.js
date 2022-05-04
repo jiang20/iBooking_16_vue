@@ -13,6 +13,7 @@ const AddStudent = require('./components/add-student.vue');
 const EditStudent = require('./components/edit-student.vue');
 const DeleteStudent = require('./components/delete-student.vue');
 const AllStudyRooms = require('./components/all-studyrooms.vue');
+const BookClassroom = require('./components/classRoom/BookingClassRoomForm');
 
 const routes = [
     {
@@ -50,7 +51,12 @@ const routes = [
         name: 'all_studyrooms',
         path: '/all_studyrooms',
         component: AllStudyRooms
-    }
+    },
+    {
+        name: 'bool_classroom',
+        path:'/book_classroom',
+        component: BookClassroom
+    },
 ];
 var router = new VueRouter({ routes: routes, mode: 'history' });
 new Vue(Vue.util.extend({ router }, App)).$mount('#app');

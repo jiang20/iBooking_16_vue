@@ -5,6 +5,7 @@
         >学生管理</router-link
       >
       <router-link to="/all_studyrooms">自习室管理</router-link>
+      <router-link to="/book_classroom">预定教室</router-link>
     </p>
     <router-view></router-view>
   </div>
