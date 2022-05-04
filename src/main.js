@@ -7,7 +7,7 @@ import VueResource from 'vue-resource';
 Vue.use(VueResource);
 
 import App from './App.vue'
-
+const Login = require('./components/Login.vue');
 const AllStudents = require('./components/all-students.vue');
 const AddStudent = require('./components/add-student.vue');
 const EditStudent = require('./components/edit-student.vue');
@@ -15,6 +15,12 @@ const DeleteStudent = require('./components/delete-student.vue');
 const AllStudyRooms = require('./components/all-studyrooms.vue');
 
 const routes = [
+    {
+        name: 'login',
+        path:'/',
+        component: Login
+    },
+
     {
         name: 'all_students',
         path: '/',
